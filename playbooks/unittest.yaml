@@ -2,7 +2,3 @@
   tasks:
   - debug: 
       msg: HELLO MGL7760 
-  - name: Run Unittest 
-    shell:
-      cmd: "python3 -m unittest -v hello"
-      chdir : "{{ zuul.project.src_dir }}"
