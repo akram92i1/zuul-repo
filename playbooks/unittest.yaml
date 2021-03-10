@@ -1,4 +1,7 @@
 - hosts : all
   tasks:
-  - debug: 
+  - name: Testing code
+    shell: python3 -m unittest -v hello
+    chdir: "{{zuul.project.src_dir}}"
+  - debug:  
       msg: HELLO MGL7760 
