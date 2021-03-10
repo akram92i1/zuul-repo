@@ -4,9 +4,9 @@
   run: playbooks/unittest.yaml
 
 - project:
-    check: 
-    jobs:
-    - unit-test
-    gate:
-    jobs:
-    - unit-test 
+     check: 
+        jobs:
+          - unit-test
+      gate:
+        jobs:
+          - unit-test 

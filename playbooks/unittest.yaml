@@ -1,5 +1,7 @@
 - hosts : all
- tasks:
+  tasks:
+  - debug: 
+      mag: HELLO MGL7760 It's zuul  
   - name: Run Unittest 
     shell:
       cmd: "sleep 60 ; python -m unittest -v hello"
