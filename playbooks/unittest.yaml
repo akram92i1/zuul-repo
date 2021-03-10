@@ -1,8 +1,8 @@
 - hosts : all
   tasks:
   - debug: 
-      mag: HELLO MGL7760 It's zuul  
+      msg: HELLO MGL7760 
   - name: Run Unittest 
     shell:
-      cmd: "sleep 60 ; python -m unittest -v hello"
+      cmd: "python3 -m unittest -v hello"
       chdir : "{{ zuul.project.src_dir }}"
