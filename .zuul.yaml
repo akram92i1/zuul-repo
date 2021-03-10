@@ -1,0 +1,12 @@
+- job:
+  name: unit-test
+  description : Run unit-test
+  run: playbooks/unittest.yaml
+
+- project:
+    check: 
+    jobs:
+    - unit-test
+    gate:
+    jobs:
+    - unit-test 
